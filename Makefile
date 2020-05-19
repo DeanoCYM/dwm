@@ -26,7 +26,7 @@ dwm: ${OBJ}
 	${CC} -o $@ ${OBJ} ${LDFLAGS}
 
 tags: 
-	ctags -e ${SRC}
+	ctags -e ${SRC} *.h
 	chown ${USER} TAGS
 
 clean:
